@@ -35,6 +35,6 @@ The AI consensus result controls whether escrow becomes withdrawable by the reci
 
 ## Scope and limitations to disclose
 
-StudioNet balances/transfers are simulated and the network can reset. V1 evaluates source-verifiable deliverables; it does not certify runtime behavior, deployment, authorship or adoption from self-reports. Studio's built-in signer was used for deployment and a browser funding demonstration; the external DApp uses separate temporary SDK signers. Transfer-queued records require child/balance verification. No production security audit, real treasury integration, stablecoin custody or live customer traction is claimed.
+StudioNet balances/transfers are simulated and the network can reset. V1 evaluates source-verifiable deliverables; it does not certify runtime behavior, deployment, authorship or adoption from self-reports. Studio's built-in signer was used for deployment and a browser funding demonstration; the external DApp uses separate temporary SDK signers. Transfer-queued records require child/balance verification. The full settlement cycle is proven by live SDK transactions; the last additional browser-only settlement walkthrough remains blocked at recipient acceptance by automatic approval review. No production security audit, real treasury integration, stablecoin custody or live customer traction is claimed.
 
 Do not mark optional video, audit or social-post fields as completed; none was published. The project has not been submitted on the user's behalf and steward acceptance is not guaranteed.

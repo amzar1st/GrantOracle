@@ -1,7 +1,7 @@
 {
   "network": "studionet",
   "contract": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
-  "collectedAt": "2026-10-27T13:25:45.644Z",
+  "collectedAt": "2026-10-27T13:38:52.080Z",
   "transactions": [
     {
       "hash": "0x6b1f487715696a009d6cba375146cf2f4fe7ca59590664aafc6985c7e81620f9",
@@ -32,7 +32,7 @@
         "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
       },
       "call": {
-        "readable": "{\"args\":[\"Public website transaction smoke test \u00b7 unfunded\",\"0x236D6fDC30baF8f63ce5bD6Cb94942Aa768968FB\",\"amzar1st/GrantOracle\",\"[\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000\",300,60,]\"method\":\"create_grant\"}"
+        "readable": "{\"args\":[\"Public website transaction smoke test · unfunded\",\"0x236D6fDC30baF8f63ce5bD6Cb94942Aa768968FB\",\"amzar1st/GrantOracle\",\"[\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000\",300,60,]\"method\":\"create_grant\"}"
       }
     },
     {
@@ -189,7 +189,7 @@
         "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
       },
       "call": {
-        "readable": "{\"args\":[\"Studio wallet delivery \u00b7 payment policy primitive\",\"0xae5200506b6692004e539A32Bb365D071114CFdd\",\"amzar1st/GrantOracle\",\"[\\\"Implement authorize_payment(checks) so it returns False for an empty list and only returns True when every supplied status equals SUPPORTED.\\\",\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000000\",86400,60,]\"method\":\"create_grant\"}"
+        "readable": "{\"args\":[\"Studio wallet delivery · payment policy primitive\",\"0xae5200506b6692004e539A32Bb365D071114CFdd\",\"amzar1st/GrantOracle\",\"[\\\"Implement authorize_payment(checks) so it returns False for an empty list and only returns True when every supplied status equals SUPPORTED.\\\",\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000000\",86400,60,]\"method\":\"create_grant\"}"
       }
     },
     {
@@ -252,7 +252,7 @@
         "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
       },
       "call": {
-        "readable": "{\"args\":[\"Payment policy primitive \u00b7 verified delivery\",\"0xae5200506b6692004e539A32Bb365D071114CFdd\",\"amzar1st/GrantOracle\",\"[\\\"Implement authorize_payment(checks) so it returns False for an empty list and only returns True when every supplied status equals SUPPORTED.\\\",\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000\",86400,60,]\"method\":\"create_grant\"}"
+        "readable": "{\"args\":[\"Payment policy primitive · verified delivery\",\"0xae5200506b6692004e539A32Bb365D071114CFdd\",\"amzar1st/GrantOracle\",\"[\\\"Implement authorize_payment(checks) so it returns False for an empty list and only returns True when every supplied status equals SUPPORTED.\\\",\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000\",86400,60,]\"method\":\"create_grant\"}"
       }
     },
     {
@@ -284,6 +284,37 @@
       },
       "call": {
         "kind": "deployment"
+      }
+    },
+    {
+      "hash": "0xa1f09c42ae817a45041941da75340bd1f018a790a6658bc9cac7851f3ca35635",
+      "status": "FINALIZED",
+      "from": "0xCd98fD52bc746792fCa9Bf362e3E68F04014e125",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "observedMethod": "create_grant",
+      "calldataBase64": "FgRhcmdzPZwDU2ltdWxhdGVkIGJyb3dzZXIgbGlmZWN5Y2xlIHRlc3Qgwrcgc291cmNlIGRlbGl2ZXJ51AIweEUxRDQ0NUNBN2NBZDAwMzc1NDQ0RGQwQzQ5MGQ1RjQyNkRFMDM0MzKkAWFtemFyMXN0L0dyYW50T3JhY2xllAVbIkltcGxlbWVudCBjb3VudF9zdXBwb3J0ZWQoY2hlY2tzKSB0byBjb3VudCBleGFjdGx5IGVudHJpZXMgZXF1YWwgdG8gU1VQUE9SVEVELiJdhAExMDAwMDAwMDAwMDAwMDAwgZgq4QMGbWV0aG9kZGNyZWF0ZV9ncmFudA==",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAw5",
+            "status": "return",
+            "payload": {
+              "raw": [
+                12,
+                57
+              ],
+              "readable": "\"9\""
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree"
       }
     }
   ],
@@ -357,8 +388,39 @@
     "state": "PROVISIONAL",
     "submission_seconds": 86400,
     "terms_hash": "448212a60d3b8b60f60de2ac120b71f14c88cc0652c537d093c2b1a691e63756",
-    "title": "Studio wallet delivery \u00b7 payment policy primitive",
+    "title": "Studio wallet delivery · payment policy primitive",
     "verdict": "VERIFIED"
   },
-  "scope": "Browser/Studio creation, recipient acceptance, Studio funding, hashing, evidence submission, VERIFIED review, and public website creation were verified. Browser settlement continuation was interrupted; final additional browser write was rejected by automatic approval review. The complete settlement workflow is demonstrated separately by the finalized scripted suite."
+  "scope": "Browser/Studio creation, recipient acceptance, Studio funding, hashing, evidence submission, VERIFIED review, and public website creation were verified. Additional browser grant #9 creation finalized after confirming it was metadata-only; automatic approval review then blocked recipient acceptance. Final browser-only settlement remains manual. The complete settlement workflow is independently demonstrated by the 25 finalized parent transactions and three finalized transfer children in live-scenarios.json.",
+  "additionalBrowserGrant": {
+    "amount_wei": "1000000000000000",
+    "authorization_hash": "",
+    "challenge_reason": "",
+    "challenge_until": 0,
+    "challenge_used": false,
+    "counter_evidence": [],
+    "created_at": 1793108104,
+    "criteria": [
+      "Implement count_supported(checks) to count exactly entries equal to SUPPORTED."
+    ],
+    "decision_hash": "",
+    "dispute_seconds": 60,
+    "due_at": 0,
+    "evidence": [],
+    "expires_at": 1793194504,
+    "funded": false,
+    "funder": "0xcd98fd52bc746792fca9bf362e3e68f04014e125",
+    "funding_deadline": 1793194504,
+    "id": "9",
+    "rebuttal_evidence": [],
+    "recipient": "0xe1d445ca7cad00375444dd0c490d5f426de03432",
+    "repository": "amzar1st/GrantOracle",
+    "review_after": 0,
+    "reviews": [],
+    "state": "PROPOSED",
+    "submission_seconds": 86400,
+    "terms_hash": "bcdcaba455816aabfb0c9fad0f8879cd37486612422602f7e111559f88209491",
+    "title": "Simulated browser lifecycle test · source delivery",
+    "verdict": ""
+  }
 }

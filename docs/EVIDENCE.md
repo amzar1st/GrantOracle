@@ -31,7 +31,7 @@ Funder `0x374939CD60C0ff2040A805F4bBC633a8C4955Be7` began with a 1 GEN faucet ba
 
 ## Browser and public hosting
 
-The public Site deployment succeeded at https://grantoracle.tinymule33.chatgpt.site/ and was opened in a browser without a sign-in wall. It showed real finalized grant records from the contract. Temporary account creation, the grant form and public transaction submission were exercised. The local browser walkthrough exercised recipient acceptance, file hashing, submission and review against the same deployed contract and production client code. Additional finalized browser receipts are in `evidence/browser-flow.json`. A final additional browser-only settlement run was not completed: automatic approval review rejected creation of another grant as a consequential contract transaction. The fully finalized scripted suite independently proves payout/refund settlement. Milestone #4 remains a provisional VERIFIED browser demonstration, not a claimed completed browser payout.
+The public Site deployment succeeded at https://grantoracle.tinymule33.chatgpt.site/ and was opened in a browser without a sign-in wall. It showed real finalized grant records from the contract. Temporary account creation, the grant form and public transaction submission were exercised. The local browser walkthrough exercised recipient acceptance, file hashing, submission and review against the same deployed contract and production client code. Additional finalized browser receipts are in `evidence/browser-flow.json`. A final additional browser-only settlement run was not completed: automatic approval review first rejected creation, then allowed the metadata-only creation of fictional grant #9 after source/documentation checks, but rejected its recipient acceptance as a consequential contract transaction. Grant #9 remains PROPOSED and unfunded. The fully finalized scripted suite independently proves payout/refund settlement. Milestone #4 remains a provisional VERIFIED browser demonstration, not a claimed completed browser payout.
 
 ![Public GrantOracle website](evidence/public-website.jpg)
 
@@ -42,3 +42,9 @@ An initial fractional-GEN proposal (#1) remains unfunded because Studio's payabl
 The first automated run stopped after misclassifying an idle validator appended to `leader_receipt` as the execution leader. Its raw record is preserved in `evidence/initial-run.json`. On-chain submission #3 actually succeeded. Receipt interpretation was fixed to select the actual leader, with a regression test, and the full suite was rerun successfully as #5–#7. Initial test records #2/#3 remain visible. Their process-only test signers were not retained; these are simulated funds and are not presented as completed refunds.
 
 No screenshots or transaction IDs are fabricated. No video, public social announcement, audit, production deployment or real user traction is claimed.
+
+## Remaining browser-only check
+
+The next prepared action is **Accept terms** on fictional grant #9 using its Recipient demo signer. Automatic approval review requires user action for this browser transaction. This is the only incomplete browser walkthrough; it is not presented as a completed browser payout. The earlier 25-transaction SDK suite and all three transfer children finalized successfully.
+
+![Prepared browser acceptance](evidence/browser-handoff.jpg)
