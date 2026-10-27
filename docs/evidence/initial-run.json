@@ -1,0 +1,372 @@
+{
+  "network": "studionet",
+  "contract": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+  "funder": "0xcA43F66E298d8a411d41188310c3c07d52474C47",
+  "recipient": "0x8C540E499B7c27479067DFAe4A610faF33eaD0c8",
+  "startedAt": "2026-10-26T05:16:42.932Z",
+  "transactions": [
+    {
+      "method": "create_grant",
+      "args": [
+        "Partial delivery · missing Merkle proof primitive",
+        "0x8C540E499B7c27479067DFAe4A610faF33eaD0c8",
+        "amzar1st/GrantOracle",
+        "[\"Implement count_supported(checks) to count exactly entries equal to SUPPORTED.\",\"Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion.\"]",
+        "1000000000000",
+        86400,
+        60
+      ],
+      "value": "0",
+      "hash": "0xe3afff0df3658be79f6e99a351e0d31f2bf78b2e281c7adf933d2c3e392e1b92",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAwy",
+        "status": "return",
+        "payload": {
+          "raw": [
+            12,
+            50
+          ],
+          "readable": "\"2\""
+        }
+      },
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      }
+    },
+    {
+      "method": "accept_grant",
+      "args": [
+        "2"
+      ],
+      "value": "0",
+      "hash": "0xcecf11661e9607b9be0feae2ab9cb76002afb7c539ff42afa8c43a1dcf4ec235",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+      }
+    },
+    {
+      "method": "fund_grant",
+      "args": [
+        "2"
+      ],
+      "value": "1000000000000",
+      "hash": "0x975c2765544235e22dead3fec97e3e1b25831c1eb652c820e7ed656cafb575d5",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      }
+    },
+    {
+      "method": "submit_evidence",
+      "args": [
+        "2",
+        "[{\"url\":\"https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py\",\"sha256\":\"fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a\"}]"
+      ],
+      "value": "0",
+      "hash": "0x23d428cb4622271ea6e2741f792d30dcbb8911b4281a470bd1330e4ab4cd02a0",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "idle"
+      }
+    },
+    {
+      "method": "review",
+      "args": [
+        "2"
+      ],
+      "value": "0",
+      "hash": "0xc9af033b065f7bc149251a66da10d42ddd24735d5f903109bf87b82674277462",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "disagree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      }
+    },
+    {
+      "method": "create_grant",
+      "args": [
+        "Rejected delivery · unconditional payment gate",
+        "0x8C540E499B7c27479067DFAe4A610faF33eaD0c8",
+        "amzar1st/GrantOracle",
+        "[\"Implement authorize_payment(checks) so that it returns False for an empty list and for any list containing UNKNOWN or CONTRADICTED.\"]",
+        "1000000000000",
+        86400,
+        60
+      ],
+      "value": "0",
+      "hash": "0x2366c9640607b353f4622acd5851da09b70a57f16da4d8f070ea893dda902610",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAwz",
+        "status": "return",
+        "payload": {
+          "raw": [
+            12,
+            51
+          ],
+          "readable": "\"3\""
+        }
+      },
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      }
+    },
+    {
+      "method": "accept_grant",
+      "args": [
+        "3"
+      ],
+      "value": "0",
+      "hash": "0x09ca8eea43711e6e1a291ace474e286c3a5e68f7be0efdf5fd1508d2d67e67e7",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      }
+    },
+    {
+      "method": "fund_grant",
+      "args": [
+        "3"
+      ],
+      "value": "1000000000000",
+      "hash": "0xe044639a1ce18c4a263110069b29e1ce899447b3f5b69f3770596b99b19e0007",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      }
+    },
+    {
+      "method": "submit_evidence",
+      "args": [
+        "3",
+        "[{\"url\":\"https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py\",\"sha256\":\"fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4\"}]"
+      ],
+      "value": "0",
+      "hash": "0xf88cc3a4fac05d865e027a87eea16e412393e4316a61ee147515984967ae66fe",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": false,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AmlkbGU=",
+        "status": "contract_error",
+        "payload": "idle"
+      },
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "2",
+      "title": "Partial delivery · missing Merkle proof primitive",
+      "criteria": [
+        "Implement count_supported(checks) to count exactly entries equal to SUPPORTED.",
+        "Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion."
+      ],
+      "initial": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "",
+        "challenge_reason": "",
+        "challenge_until": 1792991897,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792991810,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED.",
+          "Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion."
+        ],
+        "decision_hash": "6c83fef9d5a52a73936b06e065c9585eb8bf14184b2893e74e79445b62632b93",
+        "dispute_seconds": 60,
+        "due_at": 1793078221,
+        "evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793164741,
+        "funded": true,
+        "funder": "0xca43f66e298d8a411d41188310c3c07d52474c47",
+        "funding_deadline": 1793078210,
+        "id": "2",
+        "rebuttal_evidence": [],
+        "recipient": "0x8c540e499b7c27479067dfae4a610faf33ead0c8",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792991837,
+            "decision_hash": "6c83fef9d5a52a73936b06e065c9585eb8bf14184b2893e74e79445b62632b93",
+            "evidence_hash": "fd05571aa08ee6b500d12cc66ea21c101db950e123bbc1559185e4c079d31a0d",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+                  "reason": "The file defines count_supported(checks) and its implementation counts entries exactly equal to 'SUPPORTED'.",
+                  "source": 0,
+                  "status": "SUPPORTED"
+                },
+                {
+                  "criterion": 1,
+                  "quote": "",
+                  "reason": "No provided source contains verify_merkle_proof(leaf, proof, root) or evidence of Merkle tree inclusion verification.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "PARTIALLY_COMPLETED"
+            },
+            "round": 1,
+            "terms_hash": "9d228e128f6bb6e3dd9ef282861552c28edc5d5d8d459912b8b309bd40b7f215"
+          }
+        ],
+        "state": "PROVISIONAL",
+        "submission_seconds": 86400,
+        "terms_hash": "9d228e128f6bb6e3dd9ef282861552c28edc5d5d8d459912b8b309bd40b7f215",
+        "title": "Partial delivery · missing Merkle proof primitive",
+        "verdict": "PARTIALLY_COMPLETED"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Rejected delivery · unconditional payment gate",
+      "criteria": [
+        "Implement authorize_payment(checks) so that it returns False for an empty list and for any list containing UNKNOWN or CONTRADICTED."
+      ]
+    }
+  ],
+  "error": "Error: submit_evidence failed {\"raw\":\"AmlkbGU=\",\"status\":\"contract_error\",\"payload\":\"idle\"}"
+}

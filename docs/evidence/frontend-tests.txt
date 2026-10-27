@@ -1,0 +1,29 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> grantoracle@1.0.0 test
+> node --test tests/*.test.mjs
+
+✔ accepted is pending, never success (2.139885ms)
+✔ finalized errors are failures (0.14679ms)
+✔ missing execution proof fails closed (0.200861ms)
+✔ finalized successful return is success (0.362263ms)
+✔ Studio receipt format is handled (0.190435ms)
+✔ undetermined is terminal failure (0.24716ms)
+✔ no early finalization (0.248653ms)
+✔ permissionless finalization at deadline (0.144827ms)
+✔ outsider cannot challenge (0.189154ms)
+✔ party can challenge before deadline (0.422663ms)
+✔ no challenge at deadline (0.171177ms)
+✔ only authorized recipient withdraws (0.275533ms)
+✔ unpinned evidence rejected (0.507451ms)
+✔ bounded evidence (0.167601ms)
+✔ stable Studio SUCCESS requires explicit return payload (1.21531ms)
+✔ idle validator appended to leader receipts is not mistaken for leader failure (0.179699ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 160.160238

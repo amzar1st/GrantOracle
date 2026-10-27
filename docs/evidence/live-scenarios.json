@@ -1,0 +1,2555 @@
+{
+  "network": "studionet",
+  "contract": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+  "funder": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+  "recipient": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+  "startedAt": "2026-10-26T05:22:15.978Z",
+  "transactions": [
+    {
+      "method": "create_grant",
+      "args": [
+        "Partial delivery · missing Merkle proof primitive",
+        "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "amzar1st/GrantOracle",
+        "[\"Implement count_supported(checks) to count exactly entries equal to SUPPORTED.\",\"Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion.\"]",
+        "1000000000000",
+        86400,
+        60
+      ],
+      "value": "0",
+      "hash": "0x79a55ea0c369aaa2f4dfe4f37cbfecd751223612a533df88d6da9b7aee68b398",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAw1",
+        "status": "return",
+        "payload": {
+          "raw": [
+            12,
+            53
+          ],
+          "readable": "\"5\""
+        }
+      },
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x79a55ea0c369aaa2f4dfe4f37cbfecd751223612a533df88d6da9b7aee68b398",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAw1",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  12,
+                  53
+                ],
+                "readable": "\"5\""
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "accept_grant",
+      "args": [
+        "5"
+      ],
+      "value": "0",
+      "hash": "0x05d7b2cec7f5218ebe90f5f8fac6ea68436374dc8f0cf3fe10c118e1ca088e1b",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x05d7b2cec7f5218ebe90f5f8fac6ea68436374dc8f0cf3fe10c118e1ca088e1b",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+          "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "fund_grant",
+      "args": [
+        "5"
+      ],
+      "value": "1000000000000",
+      "hash": "0x61d08bd6910322f8bb772953ddc0dd57d68f81a190045b4c9f7786252ffcb3c4",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x61d08bd6910322f8bb772953ddc0dd57d68f81a190045b4c9f7786252ffcb3c4",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "value": "1000000000000",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "submit_evidence",
+      "args": [
+        "5",
+        "[{\"url\":\"https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py\",\"sha256\":\"fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a\"}]"
+      ],
+      "value": "0",
+      "hash": "0x7d6a4e1366c2b61f1cf9f4d1b98115fbc96c620e696c2a4a3924a2512453139b",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x7d6a4e1366c2b61f1cf9f4d1b98115fbc96c620e696c2a4a3924a2512453139b",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+          "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "review",
+      "args": [
+        "5"
+      ],
+      "value": "0",
+      "hash": "0x7bf422b937c5290c083f93704ad892aa4ea6ebb907b2ba1e3e7d51364c0caa2d",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x7bf422b937c5290c083f93704ad892aa4ea6ebb907b2ba1e3e7d51364c0caa2d",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "idle",
+          "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "create_grant",
+      "args": [
+        "Rejected delivery · unconditional payment gate",
+        "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "amzar1st/GrantOracle",
+        "[\"Implement authorize_payment(checks) so that it returns False for an empty list and for any list containing UNKNOWN or CONTRADICTED.\"]",
+        "1000000000000",
+        86400,
+        60
+      ],
+      "value": "0",
+      "hash": "0xe127a7240f751f2dcedfc7cec6ecdcf99c101b7881181e1a87ef5f654d960420",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAw2",
+        "status": "return",
+        "payload": {
+          "raw": [
+            12,
+            54
+          ],
+          "readable": "\"6\""
+        }
+      },
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0xe127a7240f751f2dcedfc7cec6ecdcf99c101b7881181e1a87ef5f654d960420",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAw2",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  12,
+                  54
+                ],
+                "readable": "\"6\""
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "accept_grant",
+      "args": [
+        "6"
+      ],
+      "value": "0",
+      "hash": "0xcce9b8188dbefcb8a790bbb055adfc3e8d83515fea50485ae2f78ff92c67698c",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0xcce9b8188dbefcb8a790bbb055adfc3e8d83515fea50485ae2f78ff92c67698c",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "fund_grant",
+      "args": [
+        "6"
+      ],
+      "value": "1000000000000",
+      "hash": "0x704606b7f9183080e42eb26dad85556d103e4f948e2c0be0bb1954144c8731ac",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x704606b7f9183080e42eb26dad85556d103e4f948e2c0be0bb1954144c8731ac",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "value": "1000000000000",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "submit_evidence",
+      "args": [
+        "6",
+        "[{\"url\":\"https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py\",\"sha256\":\"fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4\"}]"
+      ],
+      "value": "0",
+      "hash": "0x4416e904a2f9cef5b3565831b2702a46a680bbe0decb6ebf44571d54e93d2643",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x4416e904a2f9cef5b3565831b2702a46a680bbe0decb6ebf44571d54e93d2643",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "review",
+      "args": [
+        "6"
+      ],
+      "value": "0",
+      "hash": "0xcb9b38a9f9e8eeb79a24d0d9e65bd8449eb6b401cceae7bd69624d210a1c14b3",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "disagree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0xcb9b38a9f9e8eeb79a24d0d9e65bd8449eb6b401cceae7bd69624d210a1c14b3",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "disagree",
+          "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "create_grant",
+      "args": [
+        "Hash mismatch recovery · challenged evidence",
+        "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "amzar1st/GrantOracle",
+        "[\"Implement count_supported(checks) to count exactly entries equal to SUPPORTED.\"]",
+        "1000000000000",
+        86400,
+        60
+      ],
+      "value": "0",
+      "hash": "0x0037fd6c1ebcec8e4b83922a91e7f34926f263f257a88f2863bf06732395d1fb",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAw3",
+        "status": "return",
+        "payload": {
+          "raw": [
+            12,
+            55
+          ],
+          "readable": "\"7\""
+        }
+      },
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x0037fd6c1ebcec8e4b83922a91e7f34926f263f257a88f2863bf06732395d1fb",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAw3",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  12,
+                  55
+                ],
+                "readable": "\"7\""
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+          "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "accept_grant",
+      "args": [
+        "7"
+      ],
+      "value": "0",
+      "hash": "0xfa5feb91a20e1d77bc11ec6a73b13b1544554f4cb7d481da4beaf8046bb39d82",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0xfa5feb91a20e1d77bc11ec6a73b13b1544554f4cb7d481da4beaf8046bb39d82",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "fund_grant",
+      "args": [
+        "7"
+      ],
+      "value": "1000000000000",
+      "hash": "0x2c239c4b1bc32219d98b970ab8e979a2cfc32fad6f0a3517f3bb2623a914e0be",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x2c239c4b1bc32219d98b970ab8e979a2cfc32fad6f0a3517f3bb2623a914e0be",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "value": "1000000000000",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "submit_evidence",
+      "args": [
+        "7",
+        "[{\"url\":\"https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py\",\"sha256\":\"0000000000000000000000000000000000000000000000000000000000000000\"}]"
+      ],
+      "value": "0",
+      "hash": "0x163030d7c84f3600e6fbe9588dfbf0c62c7f9b98f6dc8b1008fa675c25991222",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x163030d7c84f3600e6fbe9588dfbf0c62c7f9b98f6dc8b1008fa675c25991222",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "review",
+      "args": [
+        "7"
+      ],
+      "value": "0",
+      "hash": "0x8a8788f026ec0b4dce922175a5e3cfaf450cb562ee84d2af2bfb480e28337e8d",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x8a8788f026ec0b4dce922175a5e3cfaf450cb562ee84d2af2bfb480e28337e8d",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+          "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "challenge",
+      "args": [
+        "7",
+        "The original attachment has an incorrect SHA-256 commitment. The verified file bytes support this criterion.",
+        "[{\"url\":\"https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py\",\"sha256\":\"fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a\"}]"
+      ],
+      "value": "0",
+      "hash": "0x6ed6eb21dac26db86875b1055117cc5d91e50c50d830f355f450a8a442b8e5f3",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x6ed6eb21dac26db86875b1055117cc5d91e50c50d830f355f450a8a442b8e5f3",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "rebut",
+      "args": [
+        "7",
+        "[{\"url\":\"https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py\",\"sha256\":\"fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a\"}]"
+      ],
+      "value": "0",
+      "hash": "0x9725fa16a571567d3abaa062eeb037fdc7858a7e08bde9ec580b120cb06c7668",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x9725fa16a571567d3abaa062eeb037fdc7858a7e08bde9ec580b120cb06c7668",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+          "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "finalize",
+      "args": [
+        "5"
+      ],
+      "value": "0",
+      "hash": "0x4d42ebe61b63b025429f31a053a2a5080269813e20f7d7582c4ebca7abaa3dba",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x4d42ebe61b63b025429f31a053a2a5080269813e20f7d7582c4ebca7abaa3dba",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+          "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+          "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "withdraw",
+      "args": [
+        "5"
+      ],
+      "value": "0",
+      "hash": "0xc91389d7f9cc38f2efb6e11b58638a06d2acf0a8dff1df9e2d100309fde112a6",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+      },
+      "triggeredTransactions": [
+        "0x9d6521e3be7294324cb1f0e2afcd10578381153b53c0d7ee2b0f95c0fb5c135f"
+      ],
+      "finalReceipt": {
+        "hash": "0xc91389d7f9cc38f2efb6e11b58638a06d2acf0a8dff1df9e2d100309fde112a6",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+          "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "idle"
+        },
+        "triggeredTransactions": [
+          "0x9d6521e3be7294324cb1f0e2afcd10578381153b53c0d7ee2b0f95c0fb5c135f"
+        ],
+        "messages": [
+          {
+            "messageType": "0",
+            "recipient": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+            "value": 1000000000000,
+            "data": "",
+            "onAcceptance": false
+          }
+        ]
+      }
+    },
+    {
+      "method": "finalize",
+      "args": [
+        "6"
+      ],
+      "value": "0",
+      "hash": "0x7646798682c3e5881ea2865192af81e8216c9fcae5be7ee8cf293bc53d81c3e8",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x7646798682c3e5881ea2865192af81e8216c9fcae5be7ee8cf293bc53d81c3e8",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "withdraw",
+      "args": [
+        "6"
+      ],
+      "value": "0",
+      "hash": "0x89a92f18c8238ce5da5c5a0a61b899ac54929f765f48ced26b344a7fffe056ef",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+        "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "triggeredTransactions": [
+        "0x90cacca889b73dd4daec38c67b3623f2986de5b0435a0fda5775d839bc6becfd"
+      ],
+      "finalReceipt": {
+        "hash": "0x89a92f18c8238ce5da5c5a0a61b899ac54929f765f48ced26b344a7fffe056ef",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+          "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "idle",
+          "0xcab45E3fe9cC9592B5C378E47734E022b7Df80c9": "agree",
+          "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+        },
+        "triggeredTransactions": [
+          "0x90cacca889b73dd4daec38c67b3623f2986de5b0435a0fda5775d839bc6becfd"
+        ],
+        "messages": [
+          {
+            "messageType": "0",
+            "recipient": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+            "value": 1000000000000,
+            "data": "",
+            "onAcceptance": false
+          }
+        ]
+      }
+    },
+    {
+      "method": "review",
+      "args": [
+        "7"
+      ],
+      "value": "0",
+      "hash": "0x9d945659042784bd55d07d894c72c7d6bc456b704c651048e91e781332ab579f",
+      "expectFail": false,
+      "status": "FINALIZED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "disagree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x9d945659042784bd55d07d894c72c7d6bc456b704c651048e91e781332ab579f",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "idle",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "disagree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree",
+          "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "finalize",
+      "args": [
+        "7"
+      ],
+      "value": "0",
+      "hash": "0x70fb2fbedbfe35c09c61c9b6fb87fff96f6a6477fcc2aa63ed72d3c110702855",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x70fb2fbedbfe35c09c61c9b6fb87fff96f6a6477fcc2aa63ed72d3c110702855",
+        "status": "FINALIZED",
+        "from": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+          "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "idle",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "method": "withdraw",
+      "args": [
+        "7"
+      ],
+      "value": "0",
+      "hash": "0x2e783bb6cb9edaeb90c331f22d8861bc128eec47c931003c8ce5b099cd82aa39",
+      "expectFail": false,
+      "status": "ACCEPTED",
+      "success": true,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AAA=",
+        "status": "return",
+        "payload": {
+          "raw": [
+            0
+          ],
+          "readable": "null"
+        }
+      },
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x2e783bb6cb9edaeb90c331f22d8861bc128eec47c931003c8ce5b099cd82aa39",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "SUCCESS",
+            "result": {
+              "raw": "AAA=",
+              "status": "return",
+              "payload": {
+                "raw": [
+                  0
+                ],
+                "readable": "null"
+              }
+            }
+          }
+        ],
+        "votes": {
+          "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+          "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "idle",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "idle",
+          "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+        },
+        "triggeredTransactions": [
+          "0x4a498128019f5c4045981f5cfcf1ce708bfa1f62136850e4ca7c6e5a7854285d"
+        ],
+        "messages": [
+          {
+            "messageType": "0",
+            "recipient": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+            "value": 1000000000000,
+            "data": "",
+            "onAcceptance": false
+          }
+        ]
+      }
+    },
+    {
+      "method": "withdraw",
+      "args": [
+        "7"
+      ],
+      "value": "0",
+      "hash": "0x33725bfc3cdfc90f1f02fd14e48777824d1808a10c4a7098b49bee438cfd57ee",
+      "expectFail": true,
+      "status": "ACCEPTED",
+      "success": false,
+      "leaderOnly": false,
+      "leaderResult": {
+        "raw": "AU5vIHdpdGhkcmF3YWwgYXZhaWxhYmxl",
+        "status": "rollback",
+        "payload": "No withdrawal available"
+      },
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      },
+      "triggeredTransactions": [],
+      "finalReceipt": {
+        "hash": "0x33725bfc3cdfc90f1f02fd14e48777824d1808a10c4a7098b49bee438cfd57ee",
+        "status": "FINALIZED",
+        "from": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "result": 6,
+        "leaderOnly": false,
+        "leaders": [
+          {
+            "mode": "leader",
+            "execution_result": "ERROR",
+            "result": {
+              "raw": "AU5vIHdpdGhkcmF3YWwgYXZhaWxhYmxl",
+              "status": "rollback",
+              "payload": "No withdrawal available"
+            }
+          }
+        ],
+        "votes": {
+          "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+          "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+          "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+          "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+          "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+        },
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "5",
+      "title": "Partial delivery · missing Merkle proof primitive",
+      "criteria": [
+        "Implement count_supported(checks) to count exactly entries equal to SUPPORTED.",
+        "Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion."
+      ],
+      "initial": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "",
+        "challenge_reason": "",
+        "challenge_until": 1792992228,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792992143,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED.",
+          "Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion."
+        ],
+        "decision_hash": "83e9d13d0d6228ad70beeed1923ebec6dbd12ca6e03e2ef8acd9ec45a9185a8e",
+        "dispute_seconds": 60,
+        "due_at": 1793078554,
+        "evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793165074,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078543,
+        "id": "5",
+        "rebuttal_evidence": [],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792992168,
+            "decision_hash": "83e9d13d0d6228ad70beeed1923ebec6dbd12ca6e03e2ef8acd9ec45a9185a8e",
+            "evidence_hash": "fd05571aa08ee6b500d12cc66ea21c101db950e123bbc1559185e4c079d31a0d",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+                  "reason": "The file defines count_supported(checks) and its implementation counts entries equal to 'SUPPORTED' exactly.",
+                  "source": 0,
+                  "status": "SUPPORTED"
+                },
+                {
+                  "criterion": 1,
+                  "quote": "",
+                  "reason": "No retrieved source shows any verify_merkle_proof(leaf, proof, root) implementation or Merkle proof verification logic.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "PARTIALLY_COMPLETED"
+            },
+            "round": 1,
+            "terms_hash": "b201b2eebe3a52c33f59041ba6e7b42a16808703d38800a161059a49424bfa80"
+          }
+        ],
+        "state": "PROVISIONAL",
+        "submission_seconds": 86400,
+        "terms_hash": "b201b2eebe3a52c33f59041ba6e7b42a16808703d38800a161059a49424bfa80",
+        "title": "Partial delivery · missing Merkle proof primitive",
+        "verdict": "PARTIALLY_COMPLETED"
+      },
+      "balanceBefore": "999997000000000000",
+      "balanceAfter": "999997000000000000",
+      "final": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "64efbbabfe1f281afcc3b36f67eeda5fccc0ac98d4d8b35d4ea1c70afe175b40",
+        "challenge_reason": "",
+        "challenge_until": 1792992228,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792992143,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED.",
+          "Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion."
+        ],
+        "decision_hash": "83e9d13d0d6228ad70beeed1923ebec6dbd12ca6e03e2ef8acd9ec45a9185a8e",
+        "dispute_seconds": 60,
+        "due_at": 1793078554,
+        "evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793165074,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078543,
+        "id": "5",
+        "rebuttal_evidence": [],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792992168,
+            "decision_hash": "83e9d13d0d6228ad70beeed1923ebec6dbd12ca6e03e2ef8acd9ec45a9185a8e",
+            "evidence_hash": "fd05571aa08ee6b500d12cc66ea21c101db950e123bbc1559185e4c079d31a0d",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+                  "reason": "The file defines count_supported(checks) and its implementation counts entries equal to 'SUPPORTED' exactly.",
+                  "source": 0,
+                  "status": "SUPPORTED"
+                },
+                {
+                  "criterion": 1,
+                  "quote": "",
+                  "reason": "No retrieved source shows any verify_merkle_proof(leaf, proof, root) implementation or Merkle proof verification logic.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "PARTIALLY_COMPLETED"
+            },
+            "round": 1,
+            "terms_hash": "b201b2eebe3a52c33f59041ba6e7b42a16808703d38800a161059a49424bfa80"
+          }
+        ],
+        "state": "REFUND_QUEUED",
+        "submission_seconds": 86400,
+        "terms_hash": "b201b2eebe3a52c33f59041ba6e7b42a16808703d38800a161059a49424bfa80",
+        "title": "Partial delivery · missing Merkle proof primitive",
+        "verdict": "PARTIALLY_COMPLETED"
+      },
+      "current": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "64efbbabfe1f281afcc3b36f67eeda5fccc0ac98d4d8b35d4ea1c70afe175b40",
+        "challenge_reason": "",
+        "challenge_until": 1792992228,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792992143,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED.",
+          "Implement verify_merkle_proof(leaf, proof, root) that verifies Merkle tree inclusion."
+        ],
+        "decision_hash": "83e9d13d0d6228ad70beeed1923ebec6dbd12ca6e03e2ef8acd9ec45a9185a8e",
+        "dispute_seconds": 60,
+        "due_at": 1793078554,
+        "evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793165074,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078543,
+        "id": "5",
+        "rebuttal_evidence": [],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792992168,
+            "decision_hash": "83e9d13d0d6228ad70beeed1923ebec6dbd12ca6e03e2ef8acd9ec45a9185a8e",
+            "evidence_hash": "fd05571aa08ee6b500d12cc66ea21c101db950e123bbc1559185e4c079d31a0d",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+                  "reason": "The file defines count_supported(checks) and its implementation counts entries equal to 'SUPPORTED' exactly.",
+                  "source": 0,
+                  "status": "SUPPORTED"
+                },
+                {
+                  "criterion": 1,
+                  "quote": "",
+                  "reason": "No retrieved source shows any verify_merkle_proof(leaf, proof, root) implementation or Merkle proof verification logic.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "PARTIALLY_COMPLETED"
+            },
+            "round": 1,
+            "terms_hash": "b201b2eebe3a52c33f59041ba6e7b42a16808703d38800a161059a49424bfa80"
+          }
+        ],
+        "state": "REFUND_QUEUED",
+        "submission_seconds": 86400,
+        "terms_hash": "b201b2eebe3a52c33f59041ba6e7b42a16808703d38800a161059a49424bfa80",
+        "title": "Partial delivery · missing Merkle proof primitive",
+        "verdict": "PARTIALLY_COMPLETED"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Rejected delivery · unconditional payment gate",
+      "criteria": [
+        "Implement authorize_payment(checks) so that it returns False for an empty list and for any list containing UNKNOWN or CONTRADICTED."
+      ],
+      "initial": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "",
+        "challenge_reason": "",
+        "challenge_until": 1792992276,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792992188,
+        "criteria": [
+          "Implement authorize_payment(checks) so that it returns False for an empty list and for any list containing UNKNOWN or CONTRADICTED."
+        ],
+        "decision_hash": "418870943862620668ade5a2afc01d12179311f478c5c4e877ccdf9076e80fd6",
+        "dispute_seconds": 60,
+        "due_at": 1793078603,
+        "evidence": [
+          {
+            "sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py"
+          }
+        ],
+        "expires_at": 1793165123,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078588,
+        "id": "6",
+        "rebuttal_evidence": [],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792992216,
+            "decision_hash": "418870943862620668ade5a2afc01d12179311f478c5c4e877ccdf9076e80fd6",
+            "evidence_hash": "405f992cae37c27189eb2ab96b9d443b18615f64d2aaffe4f44dd103d44eaa3f",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def authorize_payment(checks):\n    # Incorrect: authorizes even UNKNOWN or CONTRADICTED criteria.\n    return True",
+                  "reason": "The implementation unconditionally returns True, contradicting the requirement to return False for empty lists or lists containing UNKNOWN or CONTRADICTED.",
+                  "source": 0,
+                  "status": "CONTRADICTED"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+                  "index": 0,
+                  "sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py"
+                }
+              ],
+              "verdict": "REJECTED"
+            },
+            "round": 1,
+            "terms_hash": "4cc968f2df7d24d6fc87c176c4f2fffcb49520aab974e07522acfdda280a93fe"
+          }
+        ],
+        "state": "PROVISIONAL",
+        "submission_seconds": 86400,
+        "terms_hash": "4cc968f2df7d24d6fc87c176c4f2fffcb49520aab974e07522acfdda280a93fe",
+        "title": "Rejected delivery · unconditional payment gate",
+        "verdict": "REJECTED"
+      },
+      "balanceBefore": "999997000000000000",
+      "balanceAfter": "999997000000000000",
+      "final": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "ecdf8e11c32ac3db3a2b52a70ca4f51d5e183ff95cf4c2132f92a6e73c140477",
+        "challenge_reason": "",
+        "challenge_until": 1792992276,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792992188,
+        "criteria": [
+          "Implement authorize_payment(checks) so that it returns False for an empty list and for any list containing UNKNOWN or CONTRADICTED."
+        ],
+        "decision_hash": "418870943862620668ade5a2afc01d12179311f478c5c4e877ccdf9076e80fd6",
+        "dispute_seconds": 60,
+        "due_at": 1793078603,
+        "evidence": [
+          {
+            "sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py"
+          }
+        ],
+        "expires_at": 1793165123,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078588,
+        "id": "6",
+        "rebuttal_evidence": [],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792992216,
+            "decision_hash": "418870943862620668ade5a2afc01d12179311f478c5c4e877ccdf9076e80fd6",
+            "evidence_hash": "405f992cae37c27189eb2ab96b9d443b18615f64d2aaffe4f44dd103d44eaa3f",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def authorize_payment(checks):\n    # Incorrect: authorizes even UNKNOWN or CONTRADICTED criteria.\n    return True",
+                  "reason": "The implementation unconditionally returns True, contradicting the requirement to return False for empty lists or lists containing UNKNOWN or CONTRADICTED.",
+                  "source": 0,
+                  "status": "CONTRADICTED"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+                  "index": 0,
+                  "sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py"
+                }
+              ],
+              "verdict": "REJECTED"
+            },
+            "round": 1,
+            "terms_hash": "4cc968f2df7d24d6fc87c176c4f2fffcb49520aab974e07522acfdda280a93fe"
+          }
+        ],
+        "state": "REFUND_QUEUED",
+        "submission_seconds": 86400,
+        "terms_hash": "4cc968f2df7d24d6fc87c176c4f2fffcb49520aab974e07522acfdda280a93fe",
+        "title": "Rejected delivery · unconditional payment gate",
+        "verdict": "REJECTED"
+      },
+      "current": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "ecdf8e11c32ac3db3a2b52a70ca4f51d5e183ff95cf4c2132f92a6e73c140477",
+        "challenge_reason": "",
+        "challenge_until": 1792992276,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792992188,
+        "criteria": [
+          "Implement authorize_payment(checks) so that it returns False for an empty list and for any list containing UNKNOWN or CONTRADICTED."
+        ],
+        "decision_hash": "418870943862620668ade5a2afc01d12179311f478c5c4e877ccdf9076e80fd6",
+        "dispute_seconds": 60,
+        "due_at": 1793078603,
+        "evidence": [
+          {
+            "sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py"
+          }
+        ],
+        "expires_at": 1793165123,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078588,
+        "id": "6",
+        "rebuttal_evidence": [],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792992216,
+            "decision_hash": "418870943862620668ade5a2afc01d12179311f478c5c4e877ccdf9076e80fd6",
+            "evidence_hash": "405f992cae37c27189eb2ab96b9d443b18615f64d2aaffe4f44dd103d44eaa3f",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def authorize_payment(checks):\n    # Incorrect: authorizes even UNKNOWN or CONTRADICTED criteria.\n    return True",
+                  "reason": "The implementation unconditionally returns True, contradicting the requirement to return False for empty lists or lists containing UNKNOWN or CONTRADICTED.",
+                  "source": 0,
+                  "status": "CONTRADICTED"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+                  "index": 0,
+                  "sha256": "fb4d5ec681b1f6c3c97ccca2bd420f7a4910dcbbb6548eb0f79ed8e3676b9bb4",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/095f0cda205fafdbde0a28878b03bbc5a903d266/examples/unsafe_gate.py"
+                }
+              ],
+              "verdict": "REJECTED"
+            },
+            "round": 1,
+            "terms_hash": "4cc968f2df7d24d6fc87c176c4f2fffcb49520aab974e07522acfdda280a93fe"
+          }
+        ],
+        "state": "REFUND_QUEUED",
+        "submission_seconds": 86400,
+        "terms_hash": "4cc968f2df7d24d6fc87c176c4f2fffcb49520aab974e07522acfdda280a93fe",
+        "title": "Rejected delivery · unconditional payment gate",
+        "verdict": "REJECTED"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Hash mismatch recovery · challenged evidence",
+      "criteria": [
+        "Implement count_supported(checks) to count exactly entries equal to SUPPORTED."
+      ],
+      "initial": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "",
+        "challenge_reason": "",
+        "challenge_until": 1792992323,
+        "challenge_used": false,
+        "counter_evidence": [],
+        "created_at": 1792992241,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED."
+        ],
+        "decision_hash": "bae7fba2f77d3635f1b2bdde49851905f283f681a3b19d220b24ae8d2cbc5791",
+        "dispute_seconds": 60,
+        "due_at": 1793078650,
+        "evidence": [
+          {
+            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793165170,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078641,
+        "id": "7",
+        "rebuttal_evidence": [],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 0,
+        "reviews": [
+          {
+            "at": 1792992263,
+            "decision_hash": "bae7fba2f77d3635f1b2bdde49851905f283f681a3b19d220b24ae8d2cbc5791",
+            "evidence_hash": "4845ffbea0b6d488cbe4632f7637f1448e4fea0ce8f2d226962b89091b928f72",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "",
+                  "reason": "No reliable assessment available.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "HASH_MISMATCH",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "INCONCLUSIVE"
+            },
+            "round": 1,
+            "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66"
+          }
+        ],
+        "state": "PROVISIONAL",
+        "submission_seconds": 86400,
+        "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66",
+        "title": "Hash mismatch recovery · challenged evidence",
+        "verdict": "INCONCLUSIVE"
+      },
+      "second": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "",
+        "challenge_reason": "The original attachment has an incorrect SHA-256 commitment. The verified file bytes support this criterion.",
+        "challenge_until": 1792992403,
+        "challenge_used": true,
+        "challenger": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "counter_evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "created_at": 1792992241,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED."
+        ],
+        "decision_hash": "29e1f79652630433d17e30636ddd18d5cf710d179b53102c24ca91ab72982307",
+        "dispute_seconds": 60,
+        "due_at": 1793078650,
+        "evidence": [
+          {
+            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793165170,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078641,
+        "id": "7",
+        "rebuttal_evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 1792992333,
+        "reviews": [
+          {
+            "at": 1792992263,
+            "decision_hash": "bae7fba2f77d3635f1b2bdde49851905f283f681a3b19d220b24ae8d2cbc5791",
+            "evidence_hash": "4845ffbea0b6d488cbe4632f7637f1448e4fea0ce8f2d226962b89091b928f72",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "",
+                  "reason": "No reliable assessment available.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "HASH_MISMATCH",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "INCONCLUSIVE"
+            },
+            "round": 1,
+            "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66"
+          },
+          {
+            "at": 1792992343,
+            "decision_hash": "29e1f79652630433d17e30636ddd18d5cf710d179b53102c24ca91ab72982307",
+            "evidence_hash": "f6956e23fa1de2afd200d451c4d26d5e007c2337675140dbda7edb5844ada300",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+                  "reason": "The source defines count_supported(checks) and its implementation counts entries exactly equal to 'SUPPORTED'.",
+                  "source": 1,
+                  "status": "SUPPORTED"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "HASH_MISMATCH",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                },
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 1,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                },
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 2,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "VERIFIED"
+            },
+            "round": 2,
+            "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66"
+          }
+        ],
+        "state": "PROVISIONAL",
+        "submission_seconds": 86400,
+        "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66",
+        "title": "Hash mismatch recovery · challenged evidence",
+        "verdict": "VERIFIED"
+      },
+      "balanceBefore": "0",
+      "balanceAfter": "0",
+      "final": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "8b8a7b2851e35dff8d627ff6e5852b93b5d729d53b9d3d42ec88b84594502b8f",
+        "challenge_reason": "The original attachment has an incorrect SHA-256 commitment. The verified file bytes support this criterion.",
+        "challenge_until": 1792992403,
+        "challenge_used": true,
+        "challenger": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "counter_evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "created_at": 1792992241,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED."
+        ],
+        "decision_hash": "29e1f79652630433d17e30636ddd18d5cf710d179b53102c24ca91ab72982307",
+        "dispute_seconds": 60,
+        "due_at": 1793078650,
+        "evidence": [
+          {
+            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793165170,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078641,
+        "id": "7",
+        "rebuttal_evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 1792992333,
+        "reviews": [
+          {
+            "at": 1792992263,
+            "decision_hash": "bae7fba2f77d3635f1b2bdde49851905f283f681a3b19d220b24ae8d2cbc5791",
+            "evidence_hash": "4845ffbea0b6d488cbe4632f7637f1448e4fea0ce8f2d226962b89091b928f72",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "",
+                  "reason": "No reliable assessment available.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "HASH_MISMATCH",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "INCONCLUSIVE"
+            },
+            "round": 1,
+            "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66"
+          },
+          {
+            "at": 1792992343,
+            "decision_hash": "29e1f79652630433d17e30636ddd18d5cf710d179b53102c24ca91ab72982307",
+            "evidence_hash": "f6956e23fa1de2afd200d451c4d26d5e007c2337675140dbda7edb5844ada300",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+                  "reason": "The source defines count_supported(checks) and its implementation counts entries exactly equal to 'SUPPORTED'.",
+                  "source": 1,
+                  "status": "SUPPORTED"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "HASH_MISMATCH",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                },
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 1,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                },
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 2,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "VERIFIED"
+            },
+            "round": 2,
+            "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66"
+          }
+        ],
+        "state": "RELEASE_QUEUED",
+        "submission_seconds": 86400,
+        "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66",
+        "title": "Hash mismatch recovery · challenged evidence",
+        "verdict": "VERIFIED"
+      },
+      "current": {
+        "amount_wei": "1000000000000",
+        "authorization_hash": "8b8a7b2851e35dff8d627ff6e5852b93b5d729d53b9d3d42ec88b84594502b8f",
+        "challenge_reason": "The original attachment has an incorrect SHA-256 commitment. The verified file bytes support this criterion.",
+        "challenge_until": 1792992403,
+        "challenge_used": true,
+        "challenger": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "counter_evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "created_at": 1792992241,
+        "criteria": [
+          "Implement count_supported(checks) to count exactly entries equal to SUPPORTED."
+        ],
+        "decision_hash": "29e1f79652630433d17e30636ddd18d5cf710d179b53102c24ca91ab72982307",
+        "dispute_seconds": 60,
+        "due_at": 1793078650,
+        "evidence": [
+          {
+            "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "expires_at": 1793165170,
+        "funded": true,
+        "funder": "0x374939cd60c0ff2040a805f4bbc633a8c4955be7",
+        "funding_deadline": 1793078641,
+        "id": "7",
+        "rebuttal_evidence": [
+          {
+            "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+            "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+          }
+        ],
+        "recipient": "0x684e612faa9d0c67740e349435722b9be78945d0",
+        "repository": "amzar1st/GrantOracle",
+        "review_after": 1792992333,
+        "reviews": [
+          {
+            "at": 1792992263,
+            "decision_hash": "bae7fba2f77d3635f1b2bdde49851905f283f681a3b19d220b24ae8d2cbc5791",
+            "evidence_hash": "4845ffbea0b6d488cbe4632f7637f1448e4fea0ce8f2d226962b89091b928f72",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "",
+                  "reason": "No reliable assessment available.",
+                  "source": -1,
+                  "status": "UNKNOWN"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "HASH_MISMATCH",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "INCONCLUSIVE"
+            },
+            "round": 1,
+            "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66"
+          },
+          {
+            "at": 1792992343,
+            "decision_hash": "29e1f79652630433d17e30636ddd18d5cf710d179b53102c24ca91ab72982307",
+            "evidence_hash": "f6956e23fa1de2afd200d451c4d26d5e007c2337675140dbda7edb5844ada300",
+            "result": {
+              "checks": [
+                {
+                  "criterion": 0,
+                  "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+                  "reason": "The source defines count_supported(checks) and its implementation counts entries exactly equal to 'SUPPORTED'.",
+                  "source": 1,
+                  "status": "SUPPORTED"
+                }
+              ],
+              "sources": [
+                {
+                  "expected_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                  "index": 0,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "HASH_MISMATCH",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                },
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 1,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                },
+                {
+                  "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "index": 2,
+                  "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+                  "status": "OK",
+                  "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+                }
+              ],
+              "verdict": "VERIFIED"
+            },
+            "round": 2,
+            "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66"
+          }
+        ],
+        "state": "RELEASE_QUEUED",
+        "submission_seconds": 86400,
+        "terms_hash": "6e9e20e5892c699d52aa178a7aede5d8e4b2daa1a5b968cb34cde9a4a3a2bb66",
+        "title": "Hash mismatch recovery · challenged evidence",
+        "verdict": "VERIFIED"
+      }
+    }
+  ],
+  "completedAt": "2026-10-26T05:27:16.099Z",
+  "finalBalances": {
+    "funder": "999999000000000000",
+    "recipient": "1000000000000",
+    "contract": "1000002000000000000"
+  },
+  "transferReceipts": [
+    {
+      "parent": "0xc91389d7f9cc38f2efb6e11b58638a06d2acf0a8dff1df9e2d100309fde112a6",
+      "receipt": {
+        "hash": "0x9d6521e3be7294324cb1f0e2afcd10578381153b53c0d7ee2b0f95c0fb5c135f",
+        "status": "FINALIZED",
+        "from": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "to": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "value": "1000000000000",
+        "result": 5,
+        "leaderOnly": false,
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "parent": "0x89a92f18c8238ce5da5c5a0a61b899ac54929f765f48ced26b344a7fffe056ef",
+      "receipt": {
+        "hash": "0x90cacca889b73dd4daec38c67b3623f2986de5b0435a0fda5775d839bc6becfd",
+        "status": "FINALIZED",
+        "from": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "to": "0x374939CD60C0ff2040A805F4bBC633a8C4955Be7",
+        "value": "1000000000000",
+        "result": 5,
+        "leaderOnly": false,
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    },
+    {
+      "parent": "0x2e783bb6cb9edaeb90c331f22d8861bc128eec47c931003c8ce5b099cd82aa39",
+      "receipt": {
+        "hash": "0x4a498128019f5c4045981f5cfcf1ce708bfa1f62136850e4ca7c6e5a7854285d",
+        "status": "FINALIZED",
+        "from": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+        "to": "0x684e612FAA9D0C67740e349435722b9be78945d0",
+        "value": "1000000000000",
+        "result": 5,
+        "leaderOnly": false,
+        "triggeredTransactions": [],
+        "messages": []
+      }
+    }
+  ],
+  "collectedAt": "2026-10-26T05:29:34.508Z"
+}

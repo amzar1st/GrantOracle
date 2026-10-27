@@ -1,0 +1,34 @@
+{
+  "hash": "0x1edc039af42866c5f2ee449be43ac3988e2c4625afa8a4c81606484c13845e23",
+  "from_address": "0xf3C059C1495C80c4C94D4eB9eA43FE2fd5D6ED88",
+  "to_address": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+  "statusName": "FINALIZED",
+  "result": 6,
+  "leader_only": false,
+  "created_at": "2026-10-26T05:07:41.555413+00:00",
+  "consensus_data": {
+    "votes": {
+      "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+      "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+      "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+      "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+      "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+    },
+    "leader_receipt": [
+      {
+        "mode": "leader",
+        "execution_result": "SUCCESS",
+        "result": {
+          "raw": "AAA=",
+          "status": "return",
+          "payload": {
+            "raw": [
+              0
+            ],
+            "readable": "null"
+          }
+        }
+      }
+    ]
+  }
+}

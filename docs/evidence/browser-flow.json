@@ -1,0 +1,364 @@
+{
+  "network": "studionet",
+  "contract": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+  "collectedAt": "2026-10-27T13:25:45.644Z",
+  "transactions": [
+    {
+      "hash": "0x6b1f487715696a009d6cba375146cf2f4fe7ca59590664aafc6985c7e81620f9",
+      "status": "FINALIZED",
+      "from": "0x9847De68CC5Fef6F2d42E54a63920d2De0b76cA9",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAw4",
+            "status": "return",
+            "payload": {
+              "raw": [
+                12,
+                56
+              ],
+              "readable": "\"8\""
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "call": {
+        "readable": "{\"args\":[\"Public website transaction smoke test \u00b7 unfunded\",\"0x236D6fDC30baF8f63ce5bD6Cb94942Aa768968FB\",\"amzar1st/GrantOracle\",\"[\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000\",300,60,]\"method\":\"create_grant\"}"
+      }
+    },
+    {
+      "hash": "0x9ef55c196f4ee06d83b3b3d5eafbf1bbe6f5c512d5477c8cae347b5098539dd4",
+      "status": "FINALIZED",
+      "from": "0xae5200506b6692004e539A32Bb365D071114CFdd",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAA=",
+            "status": "return",
+            "payload": {
+              "raw": [
+                0
+              ],
+              "readable": "null"
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x4619C8420D50c9dE477DB2CBb7b4863A041688CB": "idle",
+        "0x5847AF34a4e5bA96490f8c883598f68EC9B0B907": "idle",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "call": {
+        "readable": "{\"args\":[\"4\",]\"method\":\"review\"}"
+      }
+    },
+    {
+      "hash": "0xf5b4194df7c5c739493a8c47fac1532eba149a4f33182796c2c92fee8a629c50",
+      "status": "FINALIZED",
+      "from": "0xae5200506b6692004e539A32Bb365D071114CFdd",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAA=",
+            "status": "return",
+            "payload": {
+              "raw": [
+                0
+              ],
+              "readable": "null"
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "idle",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "idle",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+      },
+      "call": {
+        "readable": "{\"args\":[\"4\",\"[{\\\"url\\\":\\\"https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py\\\",\\\"sha256\\\":\\\"fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a\\\"}]\",]\"method\":\"submit_evidence\"}"
+      }
+    },
+    {
+      "hash": "0x454dc7e5d26583e8cfd04ad81d065a01d120f5fe96e5b68fa5a2779d3860c8b6",
+      "status": "FINALIZED",
+      "from": "0xf3C059C1495C80c4C94D4eB9eA43FE2fd5D6ED88",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "value": "1000000000000000000",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAA=",
+            "status": "return",
+            "payload": {
+              "raw": [
+                0
+              ],
+              "readable": "null"
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x63d72fE364368491E62a42B9C73c317Ce1ca8434": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "idle"
+      },
+      "call": {
+        "readable": "{\"args\":[\"4\",]\"method\":\"fund_grant\"}"
+      }
+    },
+    {
+      "hash": "0x3933cb8655f539c48c3ba18729e0f0de88cc255546084a326611bc70ffd0496f",
+      "status": "FINALIZED",
+      "from": "0xae5200506b6692004e539A32Bb365D071114CFdd",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAA=",
+            "status": "return",
+            "payload": {
+              "raw": [
+                0
+              ],
+              "readable": "null"
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x045291B293B9D68969c18B6637A8258038cf787A": "agree",
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "call": {
+        "readable": "{\"args\":[\"4\",]\"method\":\"accept_grant\"}"
+      }
+    },
+    {
+      "hash": "0x48a415e4844dd66348d2b626cc4f02caba8fe598c7b7d257936ceec3d6d2a5a4",
+      "status": "FINALIZED",
+      "from": "0xf3C059C1495C80c4C94D4eB9eA43FE2fd5D6ED88",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAw0",
+            "status": "return",
+            "payload": {
+              "raw": [
+                12,
+                52
+              ],
+              "readable": "\"4\""
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x4441Ebe37E72c039B73f1D6CF8C6DEe277FE547a": "agree",
+        "0x5e84e17266a193077728229751aC8A1dD24be146": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "agree",
+        "0xb9ed1258763dfFC83356b15e8A20236B86E42ba2": "agree"
+      },
+      "call": {
+        "readable": "{\"args\":[\"Studio wallet delivery \u00b7 payment policy primitive\",\"0xae5200506b6692004e539A32Bb365D071114CFdd\",\"amzar1st/GrantOracle\",\"[\\\"Implement authorize_payment(checks) so it returns False for an empty list and only returns True when every supplied status equals SUPPORTED.\\\",\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000000\",86400,60,]\"method\":\"create_grant\"}"
+      }
+    },
+    {
+      "hash": "0x7e7d43316e5d690a3a4d9f6515231a78595539063209e6f159ebc74b6183d5e9",
+      "status": "FINALIZED",
+      "from": "0xae5200506b6692004e539A32Bb365D071114CFdd",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAA=",
+            "status": "return",
+            "payload": {
+              "raw": [
+                0
+              ],
+              "readable": "null"
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "idle",
+        "0x0eb3859451817bC25Cc717D4F676D54D0D3aD0aE": "agree",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "idle",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xF7D08d12dB37D3e02D1833b5cB7e56B07F114186": "agree"
+      },
+      "call": {
+        "readable": "{\"args\":[\"1\",]\"method\":\"accept_grant\"}"
+      }
+    },
+    {
+      "hash": "0x0f72e29a1c4c1921e7dfcbe60c578d444c49ff71d040928f2ef4da421b21c52b",
+      "status": "FINALIZED",
+      "from": "0xf3C059C1495C80c4C94D4eB9eA43FE2fd5D6ED88",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAwx",
+            "status": "return",
+            "payload": {
+              "raw": [
+                12,
+                49
+              ],
+              "readable": "\"1\""
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x007d6451555Df7765c707284F844137927aE4e5E": "agree",
+        "0x336458747913FE397be82c4F0926ACeB3ab13618": "agree",
+        "0x4868b172ddEBC18b5219aaCeAB77ae0Df330c83A": "agree",
+        "0xCe0B66448435cA53665C954705Abd753515594Cf": "agree",
+        "0xb04cdDC4a6Ff6A0aDF715cfe00Fa307b901cebD4": "agree"
+      },
+      "call": {
+        "readable": "{\"args\":[\"Payment policy primitive \u00b7 verified delivery\",\"0xae5200506b6692004e539A32Bb365D071114CFdd\",\"amzar1st/GrantOracle\",\"[\\\"Implement authorize_payment(checks) so it returns False for an empty list and only returns True when every supplied status equals SUPPORTED.\\\",\\\"Implement count_supported(checks) to count exactly the entries equal to SUPPORTED.\\\"]\",\"1000000000000000\",86400,60,]\"method\":\"create_grant\"}"
+      }
+    },
+    {
+      "hash": "0x1edc039af42866c5f2ee449be43ac3988e2c4625afa8a4c81606484c13845e23",
+      "status": "FINALIZED",
+      "from": "0xf3C059C1495C80c4C94D4eB9eA43FE2fd5D6ED88",
+      "to": "0xfC94797c8b1AA6d31023fE0C30ED60320F80Ca64",
+      "leaders": [
+        {
+          "execution_result": "SUCCESS",
+          "result": {
+            "raw": "AAA=",
+            "status": "return",
+            "payload": {
+              "raw": [
+                0
+              ],
+              "readable": "null"
+            }
+          }
+        }
+      ],
+      "votes": {
+        "0x378aED3bA912Ce77C3C66155961A7e61C2fE8F3B": "agree",
+        "0x5D9Ee6E9aAF2F0b739314A52dd9Da57cd8866dA8": "idle",
+        "0x9C182DE7F93AdbE8ee3D62570613eC23c5683cAc": "agree",
+        "0xB4EE99165ffe987E64B7b72e45a753309c501eef": "idle",
+        "0xe06A34A1eBd398AF3399d08593B8c3C433CdD947": "agree"
+      },
+      "call": {
+        "kind": "deployment"
+      }
+    }
+  ],
+  "grant4": {
+    "amount_wei": "1000000000000000000",
+    "authorization_hash": "",
+    "challenge_reason": "",
+    "challenge_until": 1792992608,
+    "challenge_used": false,
+    "counter_evidence": [],
+    "created_at": 1792991877,
+    "criteria": [
+      "Implement authorize_payment(checks) so it returns False for an empty list and only returns True when every supplied status equals SUPPORTED.",
+      "Implement count_supported(checks) to count exactly the entries equal to SUPPORTED."
+    ],
+    "decision_hash": "0c349bb190e883c7a0c37f2255f34d9a90368325493208ffa7fdad93f70ccd29",
+    "dispute_seconds": 60,
+    "due_at": 1793078579,
+    "evidence": [
+      {
+        "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+        "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+      }
+    ],
+    "expires_at": 1793165099,
+    "funded": true,
+    "funder": "0xf3c059c1495c80c4c94d4eb9ea43fe2fd5d6ed88",
+    "funding_deadline": 1793078277,
+    "id": "4",
+    "rebuttal_evidence": [],
+    "recipient": "0xae5200506b6692004e539a32bb365d071114cfdd",
+    "repository": "amzar1st/GrantOracle",
+    "review_after": 0,
+    "reviews": [
+      {
+        "at": 1792992548,
+        "decision_hash": "0c349bb190e883c7a0c37f2255f34d9a90368325493208ffa7fdad93f70ccd29",
+        "evidence_hash": "fd05571aa08ee6b500d12cc66ea21c101db950e123bbc1559185e4c079d31a0d",
+        "result": {
+          "checks": [
+            {
+              "criterion": 0,
+              "quote": "def authorize_payment(checks):\n    \"\"\"Return True only for a non-empty list containing exclusively SUPPORTED.\"\"\"\n    if not checks:\n        return False\n    return all(status == 'SUPPORTED' for status in checks)",
+              "reason": "The implementation explicitly returns False for an empty list (`if not checks: return False`) and returns True only if every status equals 'SUPPORTED' (`all(status == 'SUPPORTED' for status in checks)`).",
+              "source": 0,
+              "status": "SUPPORTED"
+            },
+            {
+              "criterion": 1,
+              "quote": "def count_supported(checks):\n    \"\"\"Count exactly the criteria marked SUPPORTED.\"\"\"\n    return sum(1 for status in checks if status == 'SUPPORTED')",
+              "reason": "The implementation counts exactly the entries equal to 'SUPPORTED' using a generator expression (`sum(1 for status in checks if status == 'SUPPORTED')`).",
+              "source": 0,
+              "status": "SUPPORTED"
+            }
+          ],
+          "sources": [
+            {
+              "expected_sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+              "index": 0,
+              "sha256": "fb29b7b407438554a54a59c95f726bc1deda3403303a4340aeb8cb1facc8b28a",
+              "status": "OK",
+              "url": "https://raw.githubusercontent.com/amzar1st/GrantOracle/4bb1a32ce516a5205e5f474258923868d16d9c0d/examples/payment_gate.py"
+            }
+          ],
+          "verdict": "VERIFIED"
+        },
+        "round": 1,
+        "terms_hash": "448212a60d3b8b60f60de2ac120b71f14c88cc0652c537d093c2b1a691e63756"
+      }
+    ],
+    "state": "PROVISIONAL",
+    "submission_seconds": 86400,
+    "terms_hash": "448212a60d3b8b60f60de2ac120b71f14c88cc0652c537d093c2b1a691e63756",
+    "title": "Studio wallet delivery \u00b7 payment policy primitive",
+    "verdict": "VERIFIED"
+  },
+  "scope": "Browser/Studio creation, recipient acceptance, Studio funding, hashing, evidence submission, VERIFIED review, and public website creation were verified. Browser settlement continuation was interrupted; final additional browser write was rejected by automatic approval review. The complete settlement workflow is demonstrated separately by the finalized scripted suite."
+}
