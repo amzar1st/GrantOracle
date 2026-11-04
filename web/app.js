@@ -5,6 +5,7 @@ import { TransactionHashVariant } from 'genlayer-js/types';
 import { parseEther, formatEther, sha256 } from 'viem';
 import deployment from './deployment.json';
 import { classify, canAct, parseEvidence } from './lifecycle.js';
+import { auditReport, checkFile, committedFiles } from './evidence-audit.js';
 
 const $ = id => document.getElementById(id);
 const esc = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -55,10 +56,58 @@ const actionLabels={'accept_grant':'Accept terms','fund_grant':'Fund escrow','su
 function renderDetail(g){
   const who=signer()?.address;const actionButtons=Object.entries(actionLabels).filter(([a])=>canAct(g,a,who)).map(([a,l])=>`<button class="act ${a==='review'?'':'secondary'}" data-action="${a}" ${busy||pending?'disabled':''}>${l}</button>`).join('');
   $('detail').hidden=false;
-  $('detail').innerHTML=`<div class="detail-card"><div class="detail-head"><div><span class="eyebrow">MILESTONE #${esc(g.id)}</span><h2>${esc(g.title)}</h2>${badge(g.state)} ${badge(g.verdict)}</div><button id="closeDetail" class="ghost" aria-label="Close milestone">✕</button></div><div class="meta"><div><span>FUNDER</span><code>${esc(g.funder)}</code></div><div><span>RECIPIENT</span><code>${esc(g.recipient)}</code></div><div><span>LOCKED REPOSITORY</span><code>${esc(g.repository)}</code></div><div><span>ESCROW</span><code>${esc(units(g.amount_wei))} GEN ${g.funded?'funded':'not funded'}</code></div><div><span>TERMS SHA-256</span><code>${esc(g.terms_hash)}</code></div><div><span>DECISION SHA-256</span><code>${esc(g.decision_hash||'Pending review')}</code></div></div><h3 style="font-size:13px">Acceptance criteria</h3><ol class="criteria">${g.criteria.map(c=>`<li>${esc(c)}</li>`).join('')}</ol><p class="deadline">Submission due: ${date(g.due_at)} · Dispute ends: ${date(g.challenge_until)} · Rebuttal ends: ${date(g.review_after)} · Recovery expiry: ${date(g.expires_at)}</p>${g.challenge_reason?`<p><b>Challenge:</b> ${esc(g.challenge_reason)}</p>`:''}<div class="actions">${actionButtons||'<p>Connect a demo signer, switch to the appropriate party, or wait for the current window. Refresh after deadlines.</p>'}</div>${['RELEASE_QUEUED','REFUND_QUEUED'].includes(g.state)?'<div class="notice">Transfer emitted. This state records a queued transfer, not proof of beneficiary receipt. Inspect the parent and child transaction and the recipient balance before calling it paid.</div>':''}<details class="evidence-entry" open><summary>Evidence submission & hashing</summary><p>Only files in the locked repository at a full 40-character commit SHA are accepted. Keep each file under 14,000 bytes. Hashes commit to exact UTF-8 bytes.</p><div class="helper"><input id="evidenceURL" aria-label="Commit-pinned raw GitHub file URL" placeholder="https://raw.githubusercontent.com/owner/repo/COMMIT/file"><button id="hashEvidence" class="secondary">Hash & append file</button></div><label>Evidence JSON <small>Used for submit, challenge or rebuttal</small><textarea id="evidenceJSON" rows="4" placeholder='[{"url":"https://raw.githubusercontent.com/…","sha256":"…"}]'></textarea></label><label>Challenge reason<textarea id="challengeReason" rows="2" maxlength="700" placeholder="Explain which criterion or evidence needs re-examination"></textarea></label></details><div class="result">${g.reviews.map(r=>`<h3>Review ${r.round} · ${esc(r.result.verdict)}</h3><p class="muted">${date(r.at)} · Decision ${esc(r.decision_hash)}</p>${r.result.checks.map((c,i)=>`<div><p><b>${i+1}. ${esc(g.criteria[i])}</b> ${badge(c.status)}</p><p>${esc(c.reason)}</p>${c.quote?`<blockquote>${esc(c.quote)}</blockquote><p class="muted">Source ${c.source+1}</p>`:''}</div>`).join('')}<h3>Retrieved source fingerprints</h3>${r.result.sources.map(s=>`<div class="source">${badge(s.status)} Source ${s.index+1}: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)} ↗</a><br><code>Expected: ${esc(s.expected_sha256)}<br>Retrieved: ${esc(s.sha256||'No usable body')}</code></div>`).join('')}`).join('')||'<p>No validator review yet. Evidence will be independently retrieved when review runs.</p>'}</div><details><summary class="inline-link">Inspect complete on-chain grant record</summary><pre>${esc(JSON.stringify(g,null,2))}</pre></details></div>`;
+  $('detail').innerHTML=`<div class="detail-card"><div class="detail-head"><div><span class="eyebrow">MILESTONE #${esc(g.id)}</span><h2>${esc(g.title)}</h2>${badge(g.state)} ${badge(g.verdict)}</div><button id="closeDetail" class="ghost" aria-label="Close milestone">✕</button></div><div class="meta"><div><span>FUNDER</span><code>${esc(g.funder)}</code></div><div><span>RECIPIENT</span><code>${esc(g.recipient)}</code></div><div><span>LOCKED REPOSITORY</span><code>${esc(g.repository)}</code></div><div><span>ESCROW</span><code>${esc(units(g.amount_wei))} GEN ${g.funded?'funded':'not funded'}</code></div><div><span>TERMS SHA-256</span><code>${esc(g.terms_hash)}</code></div><div><span>DECISION SHA-256</span><code>${esc(g.decision_hash||'Pending review')}</code></div></div><h3 style="font-size:13px">Acceptance criteria</h3><ol class="criteria">${g.criteria.map(c=>`<li>${esc(c)}</li>`).join('')}</ol><p class="deadline">Submission due: ${date(g.due_at)} · Dispute ends: ${date(g.challenge_until)} · Rebuttal ends: ${date(g.review_after)} · Recovery expiry: ${date(g.expires_at)}</p>${g.challenge_reason?`<p><b>Challenge:</b> ${esc(g.challenge_reason)}</p>`:''}<div class="actions">${actionButtons||'<p>Connect a demo signer, switch to the appropriate party, or wait for the current window. Refresh after deadlines.</p>'}</div>${['RELEASE_QUEUED','REFUND_QUEUED'].includes(g.state)?'<div class="notice">Transfer emitted. This state records a queued transfer, not proof of beneficiary receipt. Inspect the parent and child transaction and the recipient balance before calling it paid.</div>':''}<details class="evidence-entry" open><summary>Evidence submission & hashing</summary><p>Only files in the locked repository at a full 40-character commit SHA are accepted. Keep each file under 14,000 bytes. Hashes commit to exact UTF-8 bytes.</p><div class="helper"><input id="evidenceURL" aria-label="Commit-pinned raw GitHub file URL" placeholder="https://raw.githubusercontent.com/owner/repo/COMMIT/file"><button id="hashEvidence" class="secondary">Hash & append file</button></div><label>Evidence JSON <small>Used for submit, challenge or rebuttal</small><textarea id="evidenceJSON" rows="4" placeholder='[{"url":"https://raw.githubusercontent.com/…","sha256":"…"}]'></textarea></label><label>Challenge reason<textarea id="challengeReason" rows="2" maxlength="700" placeholder="Explain which criterion or evidence needs re-examination"></textarea></label></details><div class="result">${g.reviews.map(r=>`<h3>Review ${r.round} · ${esc(r.result.verdict)}</h3><p class="muted">${date(r.at)} · Decision ${esc(r.decision_hash)}</p>${r.result.checks.map((c,i)=>`<div><p><b>${i+1}. ${esc(g.criteria[i])}</b> ${badge(c.status)}</p><p>${esc(c.reason)}</p>${c.quote?`<blockquote>${esc(c.quote)}</blockquote><p class="muted">Source ${c.source+1}</p>`:''}</div>`).join('')}<h3>Retrieved source fingerprints</h3>${r.result.sources.map(s=>`<div class="source">${badge(s.status)} Source ${s.index+1}: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)} ↗</a><br><code>Expected: ${esc(s.expected_sha256)}<br>Retrieved: ${esc(s.sha256||'No usable body')}</code></div>`).join('')}`).join('')||'<p>No validator review yet. Evidence will be independently retrieved when review runs.</p>'}</div><section class="evidence-audit" id="evidenceAudit"></section><details><summary class="inline-link">Inspect complete on-chain grant record</summary><pre>${esc(JSON.stringify(g,null,2))}</pre></details></div>`;
+  renderEvidenceAudit(g);
   $('closeDetail').onclick=()=>{currentGrant=undefined;$('detail').hidden=true;};
   $('hashEvidence').onclick=async()=>{try{const url=$('evidenceURL').value.trim();if(!/^https:\/\/raw\.githubusercontent\.com\//.test(url))throw new Error('Use raw.githubusercontent.com.');const r=await fetch(url,{redirect:'error'});if(!r.ok)throw new Error(`HTTP ${r.status}`);const body=await r.arrayBuffer();if(!body.byteLength||body.byteLength>14000)throw new Error('File size must be 1–14,000 bytes.');const hash=sha256(new Uint8Array(body)).slice(2);const rows=JSON.parse($('evidenceJSON').value||'[]');rows.push({url,sha256:hash});$('evidenceJSON').value=parseEvidence(JSON.stringify(rows));toast('SHA-256 computed from exact file bytes.');}catch(e){toast(e.message)}};
   document.querySelectorAll('.act').forEach(b=>b.onclick=async()=>{try{const method=b.dataset.action;let args=[g.id],value=0n;if(['submit_evidence','rebut'].includes(method))args.push(parseEvidence($('evidenceJSON').value));if(method==='challenge'){const reason=$('challengeReason').value.trim();if(reason.length<10)throw new Error('Explain the challenge in at least 10 characters.');args.push(reason,parseEvidence($('evidenceJSON').value));}if(method==='fund_grant')value=BigInt(g.amount_wei);await write(method,args,value);}catch(e){toast(e.message)}});
+}
+function renderEvidenceAudit(grant) {
+  const panel = $('evidenceAudit');
+  const files = committedFiles(grant);
+  panel.innerHTML = `<h3>Independent evidence audit</h3>
+    <p>Re-fetch committed files and compare their exact bytes with the hashes in finalized chain state. Browser checks are separate from validator findings and settlement receipts.</p>
+    <button type="button" class="secondary" data-audit>Run audit</button>
+    <button type="button" class="secondary" data-download disabled>Download JSON report</button>
+    <p role="status"></p><ol></ol>`;
+  const run = panel.querySelector('[data-audit]');
+  const download = panel.querySelector('[data-download]');
+  const status = panel.querySelector('[role="status"]');
+  const results = panel.querySelector('ol');
+  run.onclick = async () => {
+    run.disabled = true;
+    download.disabled = true;
+    results.replaceChildren();
+    status.textContent = 'Checking committed files…';
+    const checked = await Promise.all(files.map(async file => ({
+      ...file,
+      ...await checkFile(file, grant.repository),
+    })));
+    if (!panel.isConnected) return;
+    const report = auditReport(grant, deployment, checked);
+    for (const file of checked) {
+      const row = document.createElement('li');
+      const label = document.createElement('p');
+      const hashes = document.createElement('pre');
+      label.textContent = `${file.stage} · ${file.status} · ${file.url}`;
+      hashes.textContent = `Expected: ${file.sha256}\nObserved: ${file.observedSha256 ?? 'Unavailable'}`;
+      row.append(label, hashes);
+      results.append(row);
+    }
+    status.textContent = checked.length
+      ? `${checked.filter(file => file.status === 'MATCH').length} of ${checked.length} commitments matched.`
+      : 'This record contains no evidence commitments.';
+    download.onclick = () => {
+      const url = URL.createObjectURL(new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' }));
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `grantoracle-audit-${deployment.chainId}-${grant.id}.json`;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 30_000);
+    };
+    download.disabled = false;
+    run.disabled = false;
+  };
 }
 async function track(hash){
   if(busy)return;const entry=txs.find(t=>t.hash===hash);if(!entry)return;
