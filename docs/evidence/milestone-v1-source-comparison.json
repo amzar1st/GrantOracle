@@ -3,7 +3,7 @@
   "preparedOn": "2026-11-21",
   "repository": "https://github.com/amzar1st/GrantOracle",
   "reviewedProjectBaselineVerified": false,
-  "reviewBindingEvidence": null,
+  "reviewBindingEvidence": "Owner-supplied original Project record lists CI run 40512733538. Exact entire repository snapshot inspected by steward remains unconfirmed.",
   "comparisonBase": {
     "commit": "b843cb9bfebb88bdb241b975825d79abb6244076",
     "tree": "335a54c33c6b0416cac7667c0bda51cc5a5c6750",
@@ -423,5 +423,262 @@
       "gitBlobSha1": "b370c9cf4db984ac81ceeaae6877aa02d276a85c"
     }
   ],
-  "note": "Git blob IDs identify stored bytes, including binary files. They are not raw-file SHA-256 digests and do not prove which source a steward reviewed."
+  "note": "Git blob IDs identify stored bytes, including binary files. They are not raw-file SHA-256 digests and do not prove which source a steward reviewed.",
+  "acceptedProjectRecord": {
+    "source": "Owner-supplied portal text on 2026-11-21; not independently fetched",
+    "status": "Accepted",
+    "submittedOn": "2026-10-30",
+    "reviewedOn": "2026-10-30",
+    "points": 280,
+    "partialId": "bbc1b4ed…",
+    "recordUrl": null,
+    "evidenceUrls": [
+      "https://explorer-studio.genlayer.com/tx/0x4a498128019f5c4045981f5cfcf1ce708bfa1f62136850e4ca7c6e5a7854285d",
+      "https://explorer-studio.genlayer.com/tx/0x1edc039af42866c5f2ee449be43ac3988e2c4625afa8a4c81606484c13845e23",
+      "https://github.com/amzar1st/GrantOracle/actions/runs/40512733538",
+      "https://github.com/amzar1st/GrantOracle/blob/main/docs/EVIDENCE.md",
+      "https://github.com/amzar1st/GrantOracle"
+    ]
+  },
+  "submittedCiSource": {
+    "runUrl": "https://github.com/amzar1st/GrantOracle/actions/runs/40512733538",
+    "commit": "c1775c8fc516053d1d544fdc5b18c7ce7bd455f9",
+    "status": "completed",
+    "conclusion": "success",
+    "verifiedOn": "2026-11-21",
+    "binding": "Run URL listed in owner-supplied original Project evidence; GitHub head_sha independently retrieved",
+    "frontendIdenticalToCandidateBaseline": true
+  },
+  "submittedCiFiles": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "gitBlobSha1": "4f7f19f1b80c1f189adaa55fbb0d543b49f6f824"
+    },
+    {
+      "path": ".gitignore",
+      "gitBlobSha1": "cebaaf862623fb9e0d08fbd4c66e64ad9730b1b1"
+    },
+    {
+      "path": ".openai/hosting.json",
+      "gitBlobSha1": "4396f5ace1730502122743400c66745ae7da160a"
+    },
+    {
+      "path": "LICENSE",
+      "gitBlobSha1": "b168913e8058b01755aee7e2bab8d12f07a6b660"
+    },
+    {
+      "path": "README.md",
+      "gitBlobSha1": "be20fbc180f90da5937e8ddc884b0dac0140094a"
+    },
+    {
+      "path": "contracts/grant_oracle.py",
+      "gitBlobSha1": "ca2df04a6e4a66117273130427aad6eace4f2771"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "gitBlobSha1": "4f6fa4f63d4af697b4b37b7d8f8e9e4d7b4abcfd"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "gitBlobSha1": "d4235e4a82987ae5af72f7cb1f3de818e0cdb8b0"
+    },
+    {
+      "path": "docs/EVIDENCE.md",
+      "gitBlobSha1": "ff82e1f7694c99a599852543bd1e7e1407af7c91"
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "gitBlobSha1": "6b47e5f0c10ab36a67088709bb3c92a8d1825326"
+    },
+    {
+      "path": "docs/SUBMISSION.md",
+      "gitBlobSha1": "9381e4933e080ccf7243d2df970953a7409aeb85"
+    },
+    {
+      "path": "docs/evidence/browser-flow.json",
+      "gitBlobSha1": "dace00ec2a9e19193afeb6b3146a225ee184c8a3"
+    },
+    {
+      "path": "docs/evidence/deployed-source.py",
+      "gitBlobSha1": "ca2df04a6e4a66117273130427aad6eace4f2771"
+    },
+    {
+      "path": "docs/evidence/deployment-receipt.json",
+      "gitBlobSha1": "4edb483a8eaf3a7ad20e02916a789cf9b594e497"
+    },
+    {
+      "path": "docs/evidence/frontend-tests.txt",
+      "gitBlobSha1": "2c08dba3fafbaf298267bc5e355e290648eefadf"
+    },
+    {
+      "path": "docs/evidence/genvm-validation.txt",
+      "gitBlobSha1": "88b302741701f07e8b80ff96e85f30239d7219a0"
+    },
+    {
+      "path": "docs/evidence/initial-run.json",
+      "gitBlobSha1": "6c213488b764b35b90c31003ac9bdf264e149dba"
+    },
+    {
+      "path": "docs/evidence/live-scenarios.json",
+      "gitBlobSha1": "29bb565d1819a217d9af0b19dfa39953704f8d2f"
+    },
+    {
+      "path": "docs/evidence/public-website.jpg",
+      "gitBlobSha1": "09f1ca7a1b8344d125837a8aba35986b118a9463"
+    },
+    {
+      "path": "docs/evidence/python-tests.txt",
+      "gitBlobSha1": "6813e3cc8d2437a74503e96268a6b030ec45481c"
+    },
+    {
+      "path": "examples/payment_gate.py",
+      "gitBlobSha1": "48e2bdc774897de1f5cc9cc439e48a6725b41427"
+    },
+    {
+      "path": "examples/unsafe_gate.py",
+      "gitBlobSha1": "a26aa42dd1f769eac5bc5269798ef7fbb7673d98"
+    },
+    {
+      "path": "index.html",
+      "gitBlobSha1": "85176147f316b5153e53a80b44557c1e1f6cfed6"
+    },
+    {
+      "path": "package-lock.json",
+      "gitBlobSha1": "f853652bb07b1fc9d26cefa2eb41ccacfd7370f8"
+    },
+    {
+      "path": "package.json",
+      "gitBlobSha1": "3fc50c2bedcae87474e6dec4b0032aeedd4a86e9"
+    },
+    {
+      "path": "public/grantoracle-logo.png",
+      "gitBlobSha1": "4b627ae194b9d6aa9548cb7a2a7f845da9f44e06"
+    },
+    {
+      "path": "public/logo.svg",
+      "gitBlobSha1": "c3987c26ebe90a8c50d40fedb592ebdac2ff99f4"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "gitBlobSha1": "99ef668bfd5eea760ea3341b28a99b1904b6a1e5"
+    },
+    {
+      "path": "scripts/browser-evidence.mjs",
+      "gitBlobSha1": "db01b2d275e53cd909317f1e1229dff8c2c53ab5"
+    },
+    {
+      "path": "scripts/check-live.mjs",
+      "gitBlobSha1": "1c64039a50005e26596281d1624e9ecd23baf008"
+    },
+    {
+      "path": "scripts/finalize-evidence.mjs",
+      "gitBlobSha1": "03204bcb993d1171969e82454cf1069c70687010"
+    },
+    {
+      "path": "scripts/live-scenarios.mjs",
+      "gitBlobSha1": "411c93baba6ed64f3b4448a38732a56253369619"
+    },
+    {
+      "path": "scripts/prepare-test-sdk.py",
+      "gitBlobSha1": "41311e5d8d8910dfeecdd059d9efca0db6cecf97"
+    },
+    {
+      "path": "tests/conftest.py",
+      "gitBlobSha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/lifecycle.test.mjs",
+      "gitBlobSha1": "05dfeaa10a7a579adcd1a041097bd70c2e5c1a39"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "gitBlobSha1": "b158839d4beb153d28df5a6d3052368b30e83f74"
+    },
+    {
+      "path": "tests/test_example.py",
+      "gitBlobSha1": "73e0933359903b5d7d48f8a23ab5772b3092b216"
+    },
+    {
+      "path": "vite.config.js",
+      "gitBlobSha1": "d37b6718d36736ef47e19a463160ebdce6e526a4"
+    },
+    {
+      "path": "web/app.js",
+      "gitBlobSha1": "be47b0979bfc10f2a22d2e0aafef7e041245a015"
+    },
+    {
+      "path": "web/deployment.json",
+      "gitBlobSha1": "55bda9bd9c50bc96b78dbefcf81b0f10915efea0"
+    },
+    {
+      "path": "web/lifecycle.js",
+      "gitBlobSha1": "8da9816ba32819363a4ea6bd66c232875978784a"
+    },
+    {
+      "path": "web/style.css",
+      "gitBlobSha1": "5069038b0702204f6ec11841ed3c44afd06fc328"
+    }
+  ],
+  "submittedCiToMilestoneChanges": [
+    {
+      "path": "docs/EVIDENCE.md",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 1
+    },
+    {
+      "path": "docs/MILESTONE_V1.md",
+      "status": "added",
+      "additions": 16,
+      "deletions": 0
+    },
+    {
+      "path": "docs/SUBMISSION.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1
+    },
+    {
+      "path": "docs/evidence/browser-flow.json",
+      "status": "modified",
+      "additions": 68,
+      "deletions": 6
+    },
+    {
+      "path": "docs/evidence/browser-handoff.jpg",
+      "status": "added",
+      "additions": 0,
+      "deletions": 0
+    },
+    {
+      "path": "docs/evidence/ci-result.json",
+      "status": "added",
+      "additions": 9,
+      "deletions": 0
+    },
+    {
+      "path": "tests/evidence-audit.test.mjs",
+      "status": "added",
+      "additions": 61,
+      "deletions": 0
+    },
+    {
+      "path": "web/app.js",
+      "status": "modified",
+      "additions": 50,
+      "deletions": 1
+    },
+    {
+      "path": "web/evidence-audit.js",
+      "status": "added",
+      "additions": 69,
+      "deletions": 0
+    },
+    {
+      "path": "web/style.css",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0
+    }
+  ]
 }

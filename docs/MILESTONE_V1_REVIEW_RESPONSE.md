@@ -6,7 +6,46 @@ Prepared 2026-11-21 for the steward request on GrantOracle v1 · Independent Evi
 
 The exact candidate baseline is [`b843cb9bfebb88bdb241b975825d79abb6244076`](https://github.com/amzar1st/GrantOracle/tree/b843cb9bfebb88bdb241b975825d79abb6244076). The exact milestone implementation is [`b99d6b199e60badc1806912d403e972b1ee22cdc`](https://github.com/amzar1st/GrantOracle/tree/b99d6b199e60badc1806912d403e972b1ee22cdc). [The immutable comparison](https://github.com/amzar1st/GrantOracle/compare/b843cb9bfebb88bdb241b975825d79abb6244076...b99d6b199e60badc1806912d403e972b1ee22cdc) contains one commit, five changed files, 201 additions and one deletion. The baseline is the implementation commit's direct parent and the current PR #1 base.
 
-**The original Project's reviewed source state is not established by the available evidence.** No original submission attachment, steward review record, or historical deployment provenance binding that review to this commit was found. A parent relationship, a commit date, today's branch tip, CI, and a newly created document cannot supply that missing binding. This packet supplies a reproducible comparison against the candidate, not an assertion that it was reviewed or that novelty/materiality has been accepted.
+**The accepted Project now has an evidence-linked immutable source anchor:** the original submission text supplied by the owner on 2026-11-21 lists CI run [40512733538](https://github.com/amzar1st/GrantOracle/actions/runs/40512733538), which GitHub independently identifies as source commit [`c1775c8fc516053d1d544fdc5b18c7ce7bd455f9`](https://github.com/amzar1st/GrantOracle/tree/c1775c8fc516053d1d544fdc5b18c7ce7bd455f9). That commit's frontend source is byte-identical to the candidate baseline. This is stronger than inferring the baseline from dates or today's branch tip.
+
+**Remaining distinction:** the supplied acceptance record does not explicitly state that the steward inspected the entire repository at `b843cb9bfebb88bdb241b975825d79abb6244076`. The original file evidence URL uses `main`, a mutable branch. The CI commit is pinned by a submitted evidence item, while the exact source version the steward viewed remains unconfirmed. This packet does not claim acceptance of novelty or materiality.
+
+## Accepted Project record supplied by the owner
+
+The owner provided the following portal text on 2026-11-21; the portal page URL/full record ID was not provided, so its acceptance metadata is owner-supplied rather than independently retrieved:
+
+| Field | Supplied value |
+| --- | --- |
+| Contribution | Builder → Projects → GrantOracle |
+| Status | Accepted |
+| Submitted / reviewed / last updated | October 30, 2026 |
+| Award | 280 points |
+| Partial record ID | bbc1b4ed… (incomplete; not a full identifier) |
+| Staff response | Your project is accepted, thank you for contributing. |
+
+The five original evidence links were:
+
+1. [Recipient transfer](https://explorer-studio.genlayer.com/tx/0x4a498128019f5c4045981f5cfcf1ce708bfa1f62136850e4ca7c6e5a7854285d)
+2. [Contract deployment](https://explorer-studio.genlayer.com/tx/0x1edc039af42866c5f2ee449be43ac3988e2c4625afa8a4c81606484c13845e23)
+3. [CI run 40512733538](https://github.com/amzar1st/GrantOracle/actions/runs/40512733538)
+4. [Original evidence document using mutable main](https://github.com/amzar1st/GrantOracle/blob/main/docs/EVIDENCE.md)
+5. [Repository root](https://github.com/amzar1st/GrantOracle)
+
+The accepted description covers the original escrow, validator retrieval/hash checks, criterion assessment, challenge/rebuttal, payment/refund and frontend functionality. Those capabilities overlap the milestone's foundation and are excluded from the incremental claim below.
+
+## Comparison anchored to the submitted CI evidence
+
+The [GitHub run metadata](https://api.github.com/repos/amzar1st/GrantOracle/actions/runs/40512733538) was checked on 2026-11-21: `head_sha=c1775c8fc516053d1d544fdc5b18c7ce7bd455f9`, `status=completed`, `conclusion=success`, created 2026-10-27T13:31:13Z.
+
+| Comparison | Result |
+| --- | --- |
+| [Submitted CI source → candidate baseline](https://github.com/amzar1st/GrantOracle/compare/c1775c8fc516053d1d544fdc5b18c7ce7bd455f9...b843cb9bfebb88bdb241b975825d79abb6244076) | One commit; five documentation/evidence files, +85/-8; no frontend or contract changes |
+| [Submitted CI source → fixed milestone head](https://github.com/amzar1st/GrantOracle/compare/c1775c8fc516053d1d544fdc5b18c7ce7bd455f9...b99d6b199e60badc1806912d403e972b1ee22cdc) | Two commits; ten files, +286/-9; includes the five historical documentation/evidence updates plus the five milestone files |
+| [Candidate baseline → fixed milestone head](https://github.com/amzar1st/GrantOracle/compare/b843cb9bfebb88bdb241b975825d79abb6244076...b99d6b199e60badc1806912d403e972b1ee22cdc) | One commit; five milestone files, +201/-1 |
+
+The historical documentation/evidence updates are docs/EVIDENCE.md, docs/SUBMISSION.md, docs/evidence/browser-flow.json, docs/evidence/browser-handoff.jpg and docs/evidence/ci-result.json. They are explicitly separated from the milestone implementation; this packet does not claim them as new milestone work.
+
+The identical frontend blobs at the CI commit and candidate baseline provide an exact frontend source comparison from the original submitted CI evidence to the milestone. They do not, by themselves, establish which full repository snapshot the steward viewed. The steward can cross-check the original portal record's CI link directly.
 
 ## Immutable source and historical evidence
 
@@ -72,6 +111,6 @@ For the archived example, read scenarios[id="7"].final in [live-scenarios.json](
 
 ## Evidence needed to complete the steward request
 
-Provide the original linked Project page URL and its review/submission record or attachment that pins the source commit, or a historical deployed-version record with source provenance tied to that reviewed project. If it identifies another commit, compare that exact state to the fixed milestone head instead.
+The supplied accepted record now identifies an original submitted CI evidence item, which pins the tested source and establishes exact frontend equivalence. Attach the original portal record or its URL alongside this packet so the steward can verify that link. To establish the exact complete repository snapshot reviewed (rather than the submitted CI frontend state), request confirmation of the steward's retained snapshot or supply historical deployment provenance. If it identifies another commit, compare that exact state to the fixed milestone head instead.
 
 A new tag, this packet, an owner statement made today, or a screenshot without source provenance cannot retrospectively prove the reviewed version. If no historical binding can be recovered, disclose that and ask whether the steward can supply the source snapshot from the original review. No acceptance or deadline extension is implied.
